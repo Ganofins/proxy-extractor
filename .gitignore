@@ -1,0 +1,7 @@
+proxy_extractor/__pycache__
+__pycache__
+
+# ditrbuted files
+dist
+build
+proxy_extractor.egg-info
