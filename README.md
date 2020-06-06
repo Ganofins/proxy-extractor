@@ -42,8 +42,8 @@ it returns output as a list
 
 The arguments `https` and `proxy_count` are optional.
 
-`https` to display only https supportable proxies
-`proxy_count` define number of proxies you want to extract (max. 300)
+- `https` to display only https supportable proxies
+- `proxy_count` define number of proxies you want to extract (max. 300)
 
 <hr>
 
@@ -55,9 +55,9 @@ The arguments `https` and `proxy_count` are optional.
 python cli.py --https --count 10
 ```
 
-`--https` to display only https supportable proxies
-`--count` define number of proxies you want to extract (max. 300)
-`--json` to display proxies in json format
+- `--https` to display only https supportable proxies
+- `--count` define number of proxies you want to extract (max. 300)
+- `--json` to display proxies in json format
 
 # Contribute
 Feel free to contribute to this repository.
