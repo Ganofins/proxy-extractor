@@ -1,12 +1,14 @@
 from bs4 import BeautifulSoup
 
-def _extract_proxies_free_proxy_list_net(html_content, https):
+def _extract_proxies_free_proxy_list_net(html_content, https, proxy_count):
     """Function to extract proxies from https://free-proxy-list.net/"""
     
     proxy_list = []
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.select("#proxylisttable")[0]
     for each_tr in table.select("tr"):
+        if len(proxy_list) == proxy_count:	
+            return proxy_list
         table_td = each_tr.select("td")
         if len(table_td) > 3:
             if https == True:
