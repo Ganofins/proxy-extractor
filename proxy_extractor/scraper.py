@@ -4,7 +4,6 @@ def _extract_proxies_free_proxy_list_net(html_content, https):
     """Function to extract proxies from https://free-proxy-list.net/"""
     
     proxy_list = []
-    proxy = {}
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.select("#proxylisttable")[0]
     for each_tr in table.select("tr"):
@@ -19,6 +18,7 @@ def _extract_proxies_free_proxy_list_net(html_content, https):
                         "anonymity" : table_td[4].text,
                         "https" : table_td[6].text
                     }
+                    proxy_list.append(proxy)
             else:
                 proxy = {
                     "ip" : table_td[0].text,
@@ -27,7 +27,8 @@ def _extract_proxies_free_proxy_list_net(html_content, https):
                     "anonymity" : table_td[4].text,
                     "https" : table_td[6].text
                 }
+                proxy_list.append(proxy)
 
-            proxy_list.append(proxy)
+            
     
     return proxy_list
