@@ -1,10 +1,14 @@
 # Proxy Extractor
 
-<a href="https://github.com/Ganofins/proxy-extractor/releases">
-    <img src="https://img.shields.io/pypi/v/proxy-extractor?color=3498db&label=version">
-</a>
+<h4 align="center">Proxy Extractor is a utility for extracting free proxies from various free proxy listings.</h4>
 
-**Proxy Extractor** is a utility for extracting free proxies from various free proxy listings.
+<p align="center">
+    <a href="https://github.com/Ganofins/proxy-extractor/releases">
+        <img src="https://img.shields.io/pypi/v/proxy-extractor?color=3498db&label=version">
+    </a>
+</p>
+
+![demo](https://i.imgur.com/1WlLmxz.png)
 
 Currectly, it extracts proxy from the following listings:
 
@@ -40,10 +44,11 @@ print(proxy_list)
 
 it returns output as a list
 
-The arguments `https` and `proxy_count` are optional.
+The arguments `https`, `proxy_count` and `timeout` are optional.
 
 - `https` to display only https supportable proxies
 - `proxy_count` define number of proxies you want to extract (max. 300)
+- `timeout` number of seconds till the script will check if the proxy is working (default: 50)
 
 <hr>
 
@@ -58,6 +63,7 @@ python cli.py --https --count 10
 - `--https` to display only https supportable proxies
 - `--count` define number of proxies you want to extract (max. 300)
 - `--json` to display proxies in json format
+- `--timeout` number of seconds till the script will check if the proxy is working (default: 50)
 
 # Contribute
 Feel free to contribute to this repository.

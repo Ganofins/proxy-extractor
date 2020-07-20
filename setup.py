@@ -4,7 +4,7 @@ import setuptools
 
 setuptools.setup(
     name="proxy-extractor",
-    version="0.0.4-beta",
+    version="0.1.0",
     author="Ganofins",
     author_email="bagariaganesh@gmail.com",
     description="Package to extract free proxies from various free proxy listings",
