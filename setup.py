@@ -4,18 +4,13 @@ import setuptools
 
 setuptools.setup(
     name="proxy-extractor",
-    version="0.1.0",
+    version="0.1.1",
     author="Ganofins",
     author_email="bagariaganesh@gmail.com",
     description="Package to extract free proxies from various free proxy listings",
     url="https://github.com/Ganofins/proxy-extractor",
     packages=setuptools.find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.1",
-        "Programming Language :: Python :: 3.2",
-        "Programming Language :: Python :: 3.3",
-        "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
